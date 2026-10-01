@@ -4,7 +4,7 @@ import Step2 from "./Step2";
 import Step3 from "./Step3";
 import Step4 from "./Step4";
 import Review from "./Review";
-import sideImg from "../assets/illustration.svg";
+import sideImg from "../assets/illustration.png";
 import "./Form.css";
 
 const emptyData = {

@@ -1,12 +1,49 @@
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+* { 
+  margin: 0; 
+  padding: 0; 
+  box-sizing: border-box; 
+} 
+ 
+body { 
+  font-family: "Poppins", system-ui, -apple-system, "Segoe UI", sans-serif; 
+  color: #1f2340;
+  background: #239fd8;
+  min-height: 100vh;
+  position: relative;
 }
 
-body {
-  font-family: "Poppins", system-ui, -apple-system, "Segoe UI", sans-serif;
-  color: #1f2340;
-  background: #4f46e5 url("./assets/bg.svg") center / cover no-repeat fixed;
-  min-height: 100vh;
+body::before {
+  content: "";
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 30%;
+  height: 100%;
+
+  background: url("./assets/bg.jpg") center / cover no-repeat;
+
+
+  -webkit-mask-image: linear-gradient(
+    to right,
+    transparent 0%,
+    rgba(0, 0, 0, 0.15) 15%,
+    rgba(0, 0, 0, 0.65) 35%,
+    black 60%
+  );
+
+  mask-image: linear-gradient(
+    to right,
+    transparent 0%,
+    rgba(0, 0, 0, 0.15) 15%,
+    rgba(0, 0, 0, 0.65) 35%,
+    black 60%
+  );
+
+  z-index: 0;
+  pointer-events: none;
+}
+
+body > * {
+  position: relative;
+  z-index: 1;
 }
