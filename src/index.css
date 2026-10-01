@@ -1,0 +1,12 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", system-ui, -apple-system, "Segoe UI", sans-serif;
+  color: #1f2340;
+  background: #4f46e5 url("./assets/bg.svg") center / cover no-repeat fixed;
+  min-height: 100vh;
+}
